@@ -1,23 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Fitness fam</title>
   </head>
+
   <body>
-    <h1 class="display-2">Hello, world!</h1>
+    <!--NAVIGATION-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand logo">FITNESS FAM</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link btn btn-primary text-white"
+                >Book a space</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--JUMBOTRON-->
+    <div class="jumbotron bg-color text-white">
+      <div class="row">
+        <div
+          class="col sm-6 d-flex flex-column justify-content-center align-items-start"
+        >
+          <h1 class="display-4">FITNESS FAM APP</h1>
+          <p class="lead">
+            We inspire a culture of health with our innovative corperate
+            wellness solutions. We provide a way to hwlp you keep your body and
+            soul healthy
+          </p>
+          <a href="#" class="btn btn-light text-primary">READ MORE</a>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+          <img class="img-fluid" src="./images/jumbo-img.png" alt="image" />
+        </div>
+      </div>
+    </div>
+
+    <!--FEATURES-->
+    <div class="container">
+      <div class="text-center">
+        <h3>Fitness Fam App Features</h3>
+        <p>Fitness Fam has nice and effective features for easy use</p>
+      </div>
+    </div>
+
+    <div class="feature-container">
+      <div class="feature-content">
+        <img src="/images/headset.svg" alt="" class="feature-icon" />
+        <p class="feature-text">
+          Health Advocacy
+        </p>
+      </div>
+
+      <div class="feature-content">
+        <img src="/images/Call.svg" alt="" class="feature-icon" />
+        <p class="feature-text">
+          Video call
+        </p>
+      </div>
+
+      <div class="feature-content">
+        <img src="/images/fitness.svg" alt="" class="feature-icon" />
+        <p class="feature-text">
+          Workout Programs
+        </p>
+      </div>
+
+      <div class="feature-content">
+        <img src="images/recipe.svg" alt="" class="feature-icon" />
+        <p class="feature-text">
+          Health Recipes
+        </p>
+      </div>
+    </div>
+    <!--CUSTOMER REVIEW-->
+    <h3 class="text-center">Customer Review</h3>
+    <div class="review-container">
+      <div class="review-item">
+        <img src="images/review-1.svg" alt="" />
+        <p class="text-center">
+          Fitness fam workout section is amazing and very effective
+        </p>
+      </div>
+      <div class="review-item">
+        <img src="images/review-2.svg" alt="" />
+        <p class="text-center">
+          Push yourself just like I did, you and won’t regret it. Fitness Fam is
+          the best
+        </p>
+      </div>
+      <div class="review-item">
+        <img src="images/review-3.svg" alt="" />
+        <p class="text-center">
+          I enjoy all the sections of Fitness Fam sevices
+        </p>
+      </div>
+    </div>
+    <!--DOWNLOAD-->
+    <div class="jumbotron bg-color2">
+      <div class="download-container">
+        <h3>DOWNLOAD FITNESS FAM APP</h3>
+        <p class="lead">
+          With Fitness Fam app on your phone you can easily continue your
+          sections wherever you are so you don’t get to miss out on anything
+        </p>
+        <button class="btn btn-light">
+          <img class="img-fluid" src="./images/app store.svg" alt="" />
+        </button>
+
+        <button class="btn btn-light">
+          <img src="images/play store.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <!--CONTACT-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Get in touch with us</h3>
+          <p>
+            If you have any question or you want to give us feedback, please
+            reach out to us by sending a direct mail or any other means that is
+            convienient for you.
+          </p>
+          <br />
+          <i class="fas fa-map-marker-alt"></i>
+          <p>78 Stella Badmus Street off Ologuneru, Ibadan</p>
+          <br />
+          <i class="fas fa-phone-alt"></i>
+          <p>09024356718 08024312567</p>
+          <br />
+          <i class="fas fa-envelope"></i>
+          <p>info@zuriacademy.com</p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="
+                    email"
+              id="email"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <label for="textarea">Compose message:</label>
+            <textarea
+              name=""
+              id="textarea"
+              cols="30"
+              rows="10"
+              class="form-control"
+            ></textarea>
+          </div>
+          <button type="btn" class="btn btn-primary">SEND</button>
+        </div>
+      </div>
+
+      <div class="container-fluid text-center">
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Get recent Update about anything and everything on Fitness Fam</p>
+
+        <div class="form-row">
+          <div class="col">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter your Email address"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="submit"
+              value="SUBSCRIBE"
+              class="form-control btn btn-primary"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="jumbotron bg-color3 text-center text-white">
+      <div class="container">
+        <h3>FITNESS FAM</h3>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google-plus-g"></i>
+        </div>
+
+        <p>&copy; 2020 Fitness Fam. All rights reserved.</p>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
