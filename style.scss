@@ -1,79 +1,440 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     // font-family: 'Catamaran', sans-serif;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
     // color: #525CE0;
 }
 
-.logo {
+
+
+// ====== NAVIGATION ======
+
+.nav-logo {
+    font-family: 'Catamaran', sans-serif;
     color: #525CE0 !important;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.bg-color {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #525CE0;
-    border-radius: 0;
-}
-.feature-container {
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-evenly;
-    
+.nav-item-css {
+    margin-right: 2rem;
 }
 
-.feature-content {
-    margin-right: 36px;
-    background: rgba(218, 218, 218, 0.5);
-    width: 282.54px;
-    height: 271px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.nav-link-css {
+    font-weight: 500;
+    color: #333 !important;
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
 
-    &:last-of-type{
-        margin-right: 0px;
+    &:hover {
+        background-color: #525CE0;
+        color: #fff !important;
     }
 }
 
-.feature-icon {
-    width: 95px;
-    height: 100px;
+.btn-css {
+    background: #525CE0;
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    border: 1px solid #525CE0;
+    // width: 223px;
+    // height: 70px;
+
+    &:hover {
+        background: #fff;
+        color: #525CE0 !important;
+    }
 }
 
-.feature-text {
-    text-align: center;
+// ======= JUMBOTRON 1 ==============
+
+.jumbotron-bg-color {
+    margin-top: 60px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #525CE0;
+    border-radius: 0;
 }
 
-.review-container {
+.jumbotron-btn {
+    font-size: 22px;
+    color: #525CE0 !important;
+    font-weight: 500;
+    transition: all .5s;
+    background-color: #fff;
+
+    &:hover {
+        background-color: #525CE0;
+        color: #fff !important;
+    }
+}
+
+// ============= FEATURE SECTION ===========
+.features {
+    margin: 60px 0;
+}
+
+.feature-container {
     display: flex;
-    padding: 0 100px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.review-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // background-color: green;
-    margin-right: 100px;
+.feature-card {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background: rgba(218, 218, 218, 0.5);
 
-    &:last-of-type {
+    &:nth-child(:last-of-type) {
         margin-right: 0;
     }
 }
 
-.bg-color2 {
-    background: rgba(82, 92, 224, 0.5);
-    border-radius: 0;
+.feature-icon {
+    width: 80px;
+    height: 80px;
 }
 
-.bg-color3 {
+// ========== CUSTOMER REVIEW ============
+
+.reviews {
+    padding: 0 120px;
+    margin-bottom: 60px;
+}
+
+.review-card {
+    border: 0;
+    padding: 10px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.review-text {
+    font-size: 14px;
+}
+
+// ======== DOWNLOAD SECTION==========
+
+.download-bg {
+    background: rgba(82, 92, 224, 0.5);
+    border-radius: 0;
+    padding: 80px 200px;
+    color: #333!important;
+}
+
+.download-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.download-btn {
+    height: 65px;
+    width: 200px;
+    border-radius: 6px;
+    margin: 10px;
+    transition: transform .5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+// ======== CONTACT US =========
+
+.contact {
+    margin: 60px 0;
+}
+
+.contact-btn {
+    color: #fff !important;
+    background: #525CE0;
+    width: 120px;
+    font-weight: 500;
+    border: 1px solid #525CE0;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        color: #525CE0 !important;
+        background-color: #fff;
+    }
+}
+
+.contact-icon {
+    color: #525CE0;
+}
+
+// ======== NEWSLETTER =========
+
+.newsletter {
+    margin-bottom: 60px;
+}
+
+.newsletter-input {
+    width: 280px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 2px 5px;
+}
+
+.newsletter-btn {
+    width: 180px;
+    border: 1px solid #525CE0;
+    background-color: #525CE0;
+    color: #fff;
+    font-weight: 500;
+
+    &:hover {
+        color: #525CE0 !important;
+        background-color: #fff;
+    }
+}
+
+
+// ========== FOOTER ===========
+
+.footer {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 0;
+    margin-bottom: 0;
 }
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 0 20px;
+
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: #525CE0;
+        text-decoration: none;
+    }
+}
+
+.footer-icon-link {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: #525CE0;
+    }
+
+}
+
+.footer-icon {
+    font-size: 30px;
+}
+
+// ======= MEDIA QUERIES =======
+// No media query for `xs` since this is the default in Bootstrap
+
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+@media only screen and (max-width: 1200px) {
+    .feature-card {
+        height: 180px;
+        width: 180px;
+    }
+   
+ }
+ 
+ // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+ @media only screen and (max-width: 992px) {
+     // JUMBOTRON
+     .jumbotron-header {
+         font-size: 45px;
+     }
+ 
+     .jumbotron-btn {
+         font-size: 20px !important;
+     }
+
+     //FEATURE
+     .feature-card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .feature-text {
+        font-size: 14px;
+    }
+
+    // REVIEW
+    .review-card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+     // DOWNLOAD
+
+     .download-bg {
+        padding: 70px 120px;
+    }
+ }
+ 
+ // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+ @media only screen and (max-width: 768px) {
+    // NAVBAR
+
+    .nav-logo {
+        font-size: 25px;
+    }
+ 
+
+     // JUMBOTRON
+     .jumbotron-header {
+         font-size: 35px;
+     }
+ 
+     .jumbotron-text {
+         font-size: 16px;
+     }
+ 
+     // FEATURES
+     .feature-card {
+        max-height: 120px;
+        max-width: 120px;
+    }
+
+    .feature-icon {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .feature-text {
+        font-size: 12px;
+    }
+    // REVIEW
+
+    .reviews {
+        padding: 0 80px;
+    }
+
+    .review-card-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .review-flip {
+        flex-direction: row-reverse;
+    }
+
+    .review-mobile {
+        display: none;
+    }
+
+    // DOWNLOAD
+    .download-bg {
+        padding: 40px 80px;
+    }
+
+    .download-btn {
+    height: 55px;
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    }
+
+    // FOOTER
+
+    .footer-item {
+        margin: 0 10px;
+    }
+
+
+ 
+ }
+ 
+// Extra small devices (portrait phones, less than 576px)
+ @media only screen and (max-width: 576px) {
+     // JUMBOTRON
+     .jumbotron-btn {
+         font-size: 16px !important;
+     }
+
+     // FEATURE
+     .feature-row {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .features {
+         margin: 30px 0;
+     }
+
+     // REVIEWS
+
+     .reviews {
+         margin-bottom: 30px;
+     }
+
+     // DOWNLOAD
+    .download-bg {
+        padding: 40px 60px;
+    }
+
+    .download-btn {
+    height: 55px;
+    width: 140px;
+    }
+
+    // CONTACT
+    .contact {
+        padding: 0 20px;
+        font-size: 14px;
+        margin: 30px 0;
+    }
+
+    // NEWSLETTER
+
+    .newsletter {
+        font-size: 14px;
+    }
+
+    // FOOTER
+    .footer {
+        font-size: 14px;
+    }
+
+
+ }

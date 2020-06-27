@@ -33,9 +33,12 @@
 
   <body>
     <!--NAVIGATION-->
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a href="#" class="navbar-brand logo">FITNESS FAM</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-css fixed-top">
+      <div class="container">
+
+
+        <a href="#" class="navbar-brand nav-logo">FITNESS FAM</a>
         <button
           type="button"
           class="navbar-toggler"
@@ -44,217 +47,289 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="myNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact Us</a>
+            <li class="nav-item nav-item-css"><a href="#" class="nav-link nav-link-css">Home</a></li>
+            <li class="nav-item nav-item-css"><a href="#features" class="nav-link nav-link-css">Features</a></li>
+            <li class="nav-item nav-item-css"><a href="#reviews" class="nav-link nav-link-css">Review</a></li>
+            <li class="nav-item nav-item-css">
+              <a href="#contact" class="nav-link nav-link-css">Contact Us</a>
+            </li>
+            <li class="nav-item nav-item-css">
+              <a href="#newsletter" class="nav-link nav-link-css">Newsletter</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link btn btn-primary text-white"
-                >Book a space</a
+              <a href="#" class="nav-link btn btn-css text-white"
+                >Download Now</a
               >
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    
 
     <!--JUMBOTRON-->
-    <div class="jumbotron bg-color text-white">
-      <div class="row">
-        <div
-          class="col sm-6 d-flex flex-column justify-content-center align-items-start"
-        >
-          <h1 class="display-4">FITNESS FAM APP</h1>
-          <p class="lead">
-            We inspire a culture of health with our innovative corperate
-            wellness solutions. We provide a way to hwlp you keep your body and
-            soul healthy
-          </p>
-          <a href="#" class="btn btn-light text-primary">READ MORE</a>
-        </div>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-3">
-          <img class="img-fluid" src="./images/jumbo-img.png" alt="image" />
+
+    <div class="jumbotron jumbotron-bg-color text-white">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col sm-7 d-flex flex-column justify-content-center align-items-start">
+            <h1 class="display-4 jumbotron-header">FITNESS FAM APP</h1>
+            <p class="lead jumbotron-text">
+              We inspire a culture of health with our innovative cooperate
+              wellness solutions. We provide a way to help you keep your body and
+              soul healthy
+            </p>
+            <a href="#" class="btn  jumbotron-btn">READ MORE</a>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-3 d-none d-md-flex jumbotron-img">
+            <img class="img-fluid" src="./images/jumbo-img.png" alt="image" />
+          </div>
         </div>
       </div>
     </div>
 
     <!--FEATURES-->
-    <div class="container">
-      <div class="text-center">
-        <h3>Fitness Fam App Features</h3>
-        <p>Fitness Fam has nice and effective features for easy use</p>
-      </div>
-    </div>
 
-    <div class="feature-container">
-      <div class="feature-content">
-        <img src="/images/headset.svg" alt="" class="feature-icon" />
-        <p class="feature-text">
-          Health Advocacy
-        </p>
+    <section class="features" id="features">
+      <div class="container">
+        <div class="text-center">
+          <h3>Fitness Fam App Features</h3>
+          <p>Fitness Fam has nice and effective features for easy use</p>
+        </div>
       </div>
+      
+        <div class="card-deck text-center feature-container">
 
-      <div class="feature-content">
-        <img src="/images/Call.svg" alt="" class="feature-icon" />
-        <p class="feature-text">
-          Video call
-        </p>
-      </div>
+          <div class="row">
+            <div class="col-sm-3 feature-row">
+              <div class="card feature-card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <img src="/images/headset.svg" alt="" class="feature-icon" />
+                  <p class="feature-text mt-2">Health Advocacy</p>
+                </div>
+              </div>  
+            </div> 
 
-      <div class="feature-content">
-        <img src="/images/fitness.svg" alt="" class="feature-icon" />
-        <p class="feature-text">
-          Workout Programs
-        </p>
-      </div>
+            <div class="col-sm-3 feature-row">
+              <div class="card feature-card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <img src="/images/Call.svg" alt="" class="feature-icon" />
+                  <p class="feature-text mt-2">Video Call</p>
+                </div>
+              </div>  
+            </div> 
 
-      <div class="feature-content">
-        <img src="images/recipe.svg" alt="" class="feature-icon" />
-        <p class="feature-text">
-          Health Recipes
-        </p>
-      </div>
-    </div>
+            <div class="col-sm-3 feature-row">
+              <div class="card feature-card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <img src="/images/fitness.svg" alt="" class="feature-icon" />
+                  <p class="feature-text mt-2">Workout Programs</p>
+                </div>
+              </div>  
+            </div> 
+
+            <div class="col-sm-3 feature-row">
+              <div class="card feature-card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <img src="/images/recipe.svg" alt="" class="feature-icon" />
+                  <p class="feature-text mt-2">Healthy Recipes</p>
+                </div>
+              </div>  
+            </div> 
+          </div>
+        </div>
+        
+        
+      
+    </section>
+   
     <!--CUSTOMER REVIEW-->
-    <h3 class="text-center">Customer Review</h3>
-    <div class="review-container">
-      <div class="review-item">
-        <img src="images/review-1.svg" alt="" />
-        <p class="text-center">
-          Fitness fam workout section is amazing and very effective
-        </p>
+
+    <section class="reviews" id="reviews">
+
+      <div class="container mb-1">
+        <div class="text-center">
+          <h4>Customer Review</h4>
+          
+        </div>
       </div>
-      <div class="review-item">
-        <img src="images/review-2.svg" alt="" />
-        <p class="text-center">
-          Push yourself just like I did, you and won’t regret it. Fitness Fam is
-          the best
-        </p>
+
+      <div class="card-deck text-center feature-container">
+
+        <div class="row">
+
+          <div class="col-sm-12 col-md-4">
+            <div class="card review-card">
+              <div class="card-body review-card-body">
+                <img src="/images/review-1.svg" alt="" class="review-icon" />
+                <p class="text-center mt-2 review-text">
+                  Fitness fam workout section is amazing and very effective
+                </p>
+              </div>
+            </div>  
+          </div>
+
+          
+
+          <div class="col-sm-12 col-md-4">
+            <div class="card review-card">
+              <div class="card-body review-card-body review-flip">
+                <img src="/images/review-2.svg" alt="" class="review-icon" />
+                <p class="text-center mt-2 review-text">
+                  Push yourself just like I did, you and won’t regret it. Fitness Fam is
+                  the best
+                </p>
+              </div>
+            </div>  
+          </div> 
+
+          <div class="col-sm-12 col-md-4 review-mobile">
+            <div class="card review-card">
+              <div class="card-body review-card-body">
+                <img src="/images/review-3.svg" alt="" class="review-icon" />
+                <p class="text-center ml-3 mt-2 review-text">
+                  I enjoy all the sections of Fitness Fam sevices  
+                </p>
+            </div>  
+          </div>
+        </div>
       </div>
-      <div class="review-item">
-        <img src="images/review-3.svg" alt="" />
-        <p class="text-center">
-          I enjoy all the sections of Fitness Fam sevices
-        </p>
-      </div>
-    </div>
+
+     
     <!--DOWNLOAD-->
-    <div class="jumbotron bg-color2">
-      <div class="download-container">
-        <h3>DOWNLOAD FITNESS FAM APP</h3>
-        <p class="lead">
+
+    </section class="download" id="download">
+    <div class="jumbotron download-bg">
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <h4>DOWNLOAD FITNESS FAM APP</h4>
+        <p class="lead download-text">
           With Fitness Fam app on your phone you can easily continue your
           sections wherever you are so you don’t get to miss out on anything
         </p>
-        <button class="btn btn-light">
-          <img class="img-fluid" src="./images/app store.svg" alt="" />
-        </button>
+        <div class="download-btns">
 
-        <button class="btn btn-light">
-          <img src="images/play store.svg" alt="" />
-        </button>
+          <button class="btn btn-light download-btn">
+            <img class="img-fluid" src="./images/app store.svg" alt="" />
+          </button>
+  
+          <button class="btn btn-light download-btn">
+            <img src="images/play store.svg" class="img-fluid" alt="play store" />
+          </button>
+
+        </div>
       </div>
     </div>
+
+
     <!--CONTACT-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Get in touch with us</h3>
-          <p>
-            If you have any question or you want to give us feedback, please
-            reach out to us by sending a direct mail or any other means that is
-            convienient for you.
-          </p>
-          <br />
-          <i class="fas fa-map-marker-alt"></i>
-          <p>78 Stella Badmus Street off Ologuneru, Ibadan</p>
-          <br />
-          <i class="fas fa-phone-alt"></i>
-          <p>09024356718 08024312567</p>
-          <br />
-          <i class="fas fa-envelope"></i>
-          <p>info@zuriacademy.com</p>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" class="form-control" />
+
+    <section class="contact" id="contact">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Get in touch with us</h4>
+            <p>
+              If you have any question or you want to give us feedback, please
+              reach out to us by sending a direct mail or any other means that is
+              convienient for you.
+            </p>
+            <br />  
+            <p><i class="contact-icon fas fa-map-marker-alt mr-3"></i> 78 Stella Badmus Street off Ologuneru, Ibadan</p>
+            <br />
+            
+            <p><i class="contact-icon fas fa-phone-alt mr-3"></i> 09024356718 08024312567</p>
+            <br />
+            
+            <p><i class="contact-icon fas fa-envelope mr-3"></i> info@zuriacademy.com</p>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="
-                    email"
-              id="email"
-              class="form-control"
-            />
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="textarea">Compose message:</label>
+              <textarea
+                id="textarea"
+                cols="10"
+                rows="8"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button type="btn" class="btn contact-btn btn-lg">SEND</button>
           </div>
-          <div class="form-group">
-            <label for="textarea">Compose message:</label>
-            <textarea
-              name=""
-              id="textarea"
-              cols="30"
-              rows="10"
-              class="form-control"
-            ></textarea>
-          </div>
-          <button type="btn" class="btn btn-primary">SEND</button>
         </div>
       </div>
+    </section>
 
-      <div class="container-fluid text-center">
-        <h3>Subscribe to our Newsletter</h3>
+    <!--NEWSLETTER-->
+
+    <section class="newsletter" id="newsletter">
+      <div class="container text-center">
+        <h4>Subscribe to our Newsletter</h4>
         <p>Get recent Update about anything and everything on Fitness Fam</p>
 
-        <div class="form-row">
-          <div class="col">
+        <div class="form d-flex justify-content-center">
+         
             <label for="email" class="sr-only">Email</label>
             <input
               type="email"
-              class="form-control"
+              class="newsletter-input"
               placeholder="Enter your Email address"
             />
-          </div>
-          <div class="col">
+          
+         
             <input
               type="submit"
               value="SUBSCRIBE"
-              class="form-control btn btn-primary"
+              class="btn newsletter-btn"
             />
-          </div>
+          
         </div>
       </div>
-    </div>
+    </section>
+
     <!--FOOTER-->
-    <div class="jumbotron bg-color3 text-center text-white">
-      <div class="container">
-        <h3>FITNESS FAM</h3>
-        
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+    <section>
 
-        <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-google-plus-g"></i>
+
+      <div class="jumbotron text-center footer text-white">
+        <div class="container">
+          <h3>FITNESS FAM</h3>
+          
+          <ul class="footer-nav">
+              <li class="footer-item"><a class="footer-nav-link" href="#">Home</a></li>
+              <li class="footer-item"><a class="footer-nav-link" href="#features">Features</a></li>
+              <li class="footer-item"><a class="footer-nav-link" href="#reviews">Reviews</a></li>
+              <li class="footer-item"><a class="footer-nav-link" href="#contact">Contact Us</a></li>
+              <li class="footer-item"><a class="footer-nav-link" href="#newsletter">Newsletter</a></li>
+          </ul>
+  
+          <div class="social-icons">
+              <a href="/" class="footer-icon-link"><i class="fab fa-facebook-f footer-icon"></i></a>
+              <a  href="/" class="footer-icon-link"><i class="fab fa-twitter footer-icon"></i></a>
+              <a href="/"  class="footer-icon-link"><i class="fab fa-instagram footer-icon"></i></a>
+              <a href="/"  class="footer-icon-link"><i class="fab fa-google-plus-g footer-icon"></i></a>
+          </div>
+  
+          <p class="mt-2">&copy; 2020 Fitness Fam. All rights reserved.</p>
         </div>
-
-        <p>&copy; 2020 Fitness Fam. All rights reserved.</p>
       </div>
-    </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
