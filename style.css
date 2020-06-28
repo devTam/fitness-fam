@@ -34,8 +34,7 @@ body {
 }
 
 .nav-link-css:hover {
-  background-color: #525CE0;
-  color: #fff !important;
+  color: #525CE0 !important;
 }
 
 .btn-css {
