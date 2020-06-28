@@ -389,6 +389,9 @@ body {
     height: 55px;
     width: 140px;
   }
+  .download-text {
+    font-size: 10px;
+  }
   .contact {
     padding: 0 20px;
     font-size: 14px;
@@ -397,6 +400,9 @@ body {
   .contact-btn {
     width: 100px;
     height: 45px;
+  }
+  .contact-mobile {
+    display: none;
   }
   .newsletter {
     font-size: 14px;

@@ -448,6 +448,10 @@ body {
     width: 140px;
     }
 
+    .download-text {
+        font-size: 10px;
+    }
+
     // CONTACT
     .contact {
         padding: 0 20px;
@@ -458,6 +462,10 @@ body {
     .contact-btn {
         width: 100px;
         height: 45px;
+    }
+
+    .contact-mobile {
+        display: none;
     }
 
     // NEWSLETTER
