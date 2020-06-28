@@ -207,6 +207,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -356,6 +358,10 @@ body {
   .reviews {
     margin-bottom: 30px;
   }
+  img.review-icon {
+    height: 100px;
+    width: 100px;
+  }
   .download-bg {
     padding: 40px 60px;
   }
@@ -368,8 +374,21 @@ body {
     font-size: 14px;
     margin: 30px 0;
   }
+  .contact-btn {
+    width: 100px;
+    height: 45px;
+  }
   .newsletter {
     font-size: 14px;
+  }
+  .newsletter-input {
+    width: 180px;
+    height: 45px;
+    margin-right: 15px;
+    padding: 1px 2px;
+  }
+  .newsletter-btn {
+    width: 120px;
   }
   .footer {
     font-size: 14px;
