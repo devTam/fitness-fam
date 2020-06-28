@@ -107,9 +107,17 @@ body {
           box-shadow: 9px 11px 5px -4px rgba(0, 0, 0, 0.75);
 }
 
+.feature-card-body {
+  padding: .2rem;
+}
+
 .feature-icon {
   width: 80px;
   height: 80px;
+}
+
+.feature-text {
+  margin-bottom: 0;
 }
 
 .reviews {

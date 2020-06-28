@@ -108,9 +108,17 @@ body {
     }
 }
 
+.feature-card-body {
+    padding: .2rem;
+}
+
 .feature-icon {
     width: 80px;
     height: 80px;
+}
+
+.feature-text {
+    margin-bottom: 0;
 }
 
 // ========== CUSTOMER REVIEW ============
