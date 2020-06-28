@@ -374,8 +374,11 @@ body {
   .review-card {
     display: block;
   }
+  .review-icon-1 {
+    margin-right: 3px;
+  }
   .review-icon-2 {
-    margin-left: 8px;
+    margin-left: 3px;
   }
   .padding {
     padding: 0;
