@@ -96,9 +96,15 @@ body {
     width: 200px;
     height: 200px;
     background: rgba(218, 218, 218, 0.5);
+    transition: all .5s ease-out;
 
     &:nth-child(:last-of-type) {
         margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 9px 11px 5px -4px rgba(0,0,0,0.75);
     }
 }
 
