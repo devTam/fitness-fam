@@ -16,7 +16,7 @@ body {
 
 .nav-logo {
   font-family: 'Catamaran', sans-serif;
-  color: #525CE0 !important;
+  color: #F63541 !important;
   font-size: 30px;
   font-weight: 500;
 }
@@ -34,41 +34,40 @@ body {
 }
 
 .nav-link-css:hover {
-  color: #525CE0 !important;
+  color: #F63541 !important;
 }
 
 .btn-css {
-  background: #525CE0;
+  background: #F63541;
   border-radius: 5px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
-  border: 1px solid #525CE0;
+  border: 1px solid #F63541;
 }
 
 .btn-css:hover {
   background: #fff;
-  color: #525CE0 !important;
+  color: #F63541 !important;
 }
 
 .jumbotron-bg-color {
   margin-top: 60px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))), #525CE0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #525CE0;
+  background: rgba(218, 218, 218, 0.1);
   border-radius: 0;
 }
 
 .jumbotron-btn {
   font-size: 22px;
-  color: #525CE0 !important;
+  background-color: #F63541 !important;
   font-weight: 500;
   -webkit-transition: all .5s;
   transition: all .5s;
-  background-color: #fff;
+  color: #fff;
 }
 
 .jumbotron-btn:hover {
-  background-color: #525CE0;
-  color: #fff !important;
+  color: #F63541;
+  background-color: #fff !important;
 }
 
 .features {
@@ -89,9 +88,9 @@ body {
 
 .feature-card {
   margin: 20px;
-  width: 200px;
-  height: 200px;
-  background: rgba(218, 218, 218, 0.5);
+  padding: 15px;
+  height: 320px;
+  width: 250px;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -116,6 +115,10 @@ body {
   height: 80px;
 }
 
+.text-bold {
+  font-weight: 500;
+}
+
 .feature-text {
   margin-bottom: 0;
 }
@@ -126,7 +129,8 @@ body {
 }
 
 .review-card {
-  border: 0;
+  background: rgba(218, 218, 218, 0.3);
+  border-radius: 12px;
   padding: 10px;
   margin: 0;
   padding-left: 0;
@@ -138,7 +142,7 @@ body {
 }
 
 .download-bg {
-  background: rgba(82, 92, 224, 0.5);
+  background-color: rgba(218, 218, 218, 0.1);
   border-radius: 0;
   padding: 80px 200px;
   color: #333 !important;
@@ -171,21 +175,21 @@ body {
 
 .contact-btn {
   color: #fff !important;
-  background: #525CE0;
+  background: #F63541;
   width: 120px;
   font-weight: 500;
-  border: 1px solid #525CE0;
+  border: 1px solid #F63541;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 
 .contact-btn:hover {
-  color: #525CE0 !important;
+  color: #F63541 !important;
   background-color: #fff;
 }
 
 .contact-icon {
-  color: #525CE0;
+  color: #F63541;
 }
 
 .newsletter {
@@ -201,19 +205,19 @@ body {
 
 .newsletter-btn {
   width: 180px;
-  border: 1px solid #525CE0;
-  background-color: #525CE0;
+  border: 1px solid #F63541;
+  background-color: #F63541;
   color: #fff;
   font-weight: 500;
 }
 
 .newsletter-btn:hover {
-  color: #525CE0 !important;
+  color: #F63541 !important;
   background-color: #fff;
 }
 
 .footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: #F63541;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -243,7 +247,7 @@ body {
 }
 
 .footer-nav-link:hover {
-  color: #525CE0;
+  color: #F63541;
   text-decoration: none;
 }
 
@@ -254,7 +258,7 @@ body {
 }
 
 .footer-icon-link:hover {
-  color: #525CE0;
+  color: #F63541;
 }
 
 .footer-icon {
@@ -263,8 +267,8 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .feature-card {
-    height: 180px;
-    width: 180px;
+    height: 320px;
+    width: 250px;
   }
 }
 
@@ -276,8 +280,8 @@ body {
     font-size: 20px !important;
   }
   .feature-card {
-    height: 150px;
-    width: 150px;
+    height: 290px;
+    width: 220px;
   }
   .feature-icon {
     width: 70px;
@@ -306,8 +310,8 @@ body {
     font-size: 16px;
   }
   .feature-card {
-    max-height: 120px;
-    max-width: 120px;
+    max-height: 260px;
+    max-width: 190px;
   }
   .feature-icon {
     max-width: 50px;
