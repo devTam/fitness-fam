@@ -151,7 +151,7 @@ body {
 .download-bg {
     background-color: rgba(218, 218, 218, 0.1);
     border-radius: 0;
-    padding: 80px 200px;
+    // padding: 80px 200px;
     color: #333!important;
 }
 
@@ -250,7 +250,7 @@ body {
     color: #fff;
 
     &:hover {
-        color: #F63541;
+        color: #333;
         text-decoration: none;
     }
 }
@@ -261,7 +261,7 @@ body {
     color: #fff;
 
     &:hover {
-        color: #F63541;
+        color: #333;
     }
 
 }
@@ -365,23 +365,23 @@ body {
     }
     // REVIEW
 
-    .reviews {
-        padding: 0 80px;
-    }
+    // .reviews {
+    //     padding: 0 80px;
+    // }
 
-    .review-card-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    // .review-card-body {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
 
-    .review-flip {
-        flex-direction: row-reverse;
-    }
+    // .review-flip {
+    //     flex-direction: row-reverse;
+    // }
 
-    .review-mobile {
-        display: none;
-    }
+    // .review-mobile {
+    //     display: none;
+    // }
 
     // DOWNLOAD
     .download-bg {
@@ -455,26 +455,26 @@ body {
          margin-bottom: 30px;
      }
 
-     img.review-icon {
-        height: 100px;
-        width: 100px;
-     }
+    //  img.review-icon {
+    //     height: 100px;
+    //     width: 100px;
+    //  }
 
-     .review-card {
-         display: block;
-     }
+    //  .review-card {
+    //      display: block;
+    //  }
 
-     .review-icon-1 {
-         margin-right: 3px;
-     }
+    //  .review-icon-1 {
+    //      margin-right: 3px;
+    //  }
 
-     .review-icon-2 {
-         margin-left: 3px;
-     }
+    //  .review-icon-2 {
+    //      margin-left: 3px;
+    //  }
 
-     .padding {
-         padding: 0;
-     }
+    //  .padding {
+    //      padding: 0;
+    //  }
 
      
 

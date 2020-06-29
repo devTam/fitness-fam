@@ -144,7 +144,6 @@ body {
 .download-bg {
   background-color: rgba(218, 218, 218, 0.1);
   border-radius: 0;
-  padding: 80px 200px;
   color: #333 !important;
 }
 
@@ -247,7 +246,7 @@ body {
 }
 
 .footer-nav-link:hover {
-  color: #F63541;
+  color: #333;
   text-decoration: none;
 }
 
@@ -258,7 +257,7 @@ body {
 }
 
 .footer-icon-link:hover {
-  color: #F63541;
+  color: #333;
 }
 
 .footer-icon {
@@ -319,29 +318,6 @@ body {
   }
   .feature-text {
     font-size: 12px;
-  }
-  .reviews {
-    padding: 0 80px;
-  }
-  .review-card-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .review-flip {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .review-mobile {
-    display: none;
   }
   .download-bg {
     padding: 40px 80px;
@@ -407,22 +383,6 @@ body {
   }
   .reviews {
     margin-bottom: 30px;
-  }
-  img.review-icon {
-    height: 100px;
-    width: 100px;
-  }
-  .review-card {
-    display: block;
-  }
-  .review-icon-1 {
-    margin-right: 3px;
-  }
-  .review-icon-2 {
-    margin-left: 3px;
-  }
-  .padding {
-    padding: 0;
   }
   .download-bg {
     padding: 40px 60px;
