@@ -14,6 +14,79 @@ body {
   overflow-x: hidden;
 }
 
+@-webkit-keyframes backInDown {
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes backInDown {
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.jumbotron-content {
+  -webkit-animation: backInDown 1s;
+          animation: backInDown 1s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.jumbotron-img {
+  opacity: 0;
+  -webkit-animation: fadeInRight 1s 1s forwards;
+          animation: fadeInRight 1s 1s forwards;
+}
+
 .nav-logo {
   font-family: 'Catamaran', sans-serif;
   color: #F63541 !important;
@@ -274,6 +347,10 @@ body {
     height: 320px;
     width: 250px;
   }
+  .review-card {
+    max-width: 320px;
+    max-height: 250px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -294,9 +371,16 @@ body {
   .feature-text {
     font-size: 14px;
   }
+  .review-card {
+    width: 240px;
+    max-height: 250px;
+  }
   .review-card-body {
     padding-left: 0;
     padding-right: 0;
+  }
+  .review1 {
+    margin-bottom: 30px;
   }
   .download-bg {
     padding: 70px 120px;
@@ -313,6 +397,17 @@ body {
   .jumbotron-text {
     font-size: 16px;
   }
+  .feature-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .feature-card {
     max-height: 260px;
     max-width: 190px;
@@ -323,6 +418,36 @@ body {
   }
   .feature-text {
     font-size: 12px;
+  }
+  REVIEW
+.review-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review1, .review2, .review3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .review2 {
+    margin-bottom: 30px;
   }
   .download-bg {
     padding: 40px 80px;
@@ -389,10 +514,6 @@ body {
   .reviews {
     margin-bottom: 30px;
   }
-  .review-card {
-    display: block;
-    padding: 0 90px;
-  }
   .download-block {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -429,8 +550,10 @@ body {
     margin: 30px 0;
   }
   .contact-btn {
-    width: 100px;
-    height: 45px;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    font-size: 16px;
   }
   .contact-mobile {
     display: none;
@@ -449,7 +572,8 @@ body {
     padding: 1px 2px;
   }
   .newsletter-btn {
-    width: 120px;
+    width: 105px;
+    padding: 0;
   }
   .footer {
     font-size: 14px;

@@ -18,6 +18,51 @@ body {
     // color: #F63541;
 }
 
+// ANIMATIONS
+
+@keyframes backInDown {
+    0% {
+      -webkit-transform: translateY(-1200px) scale(0.7);
+      transform: translateY(-1200px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80% {
+      -webkit-transform: translateY(0px) scale(0.7);
+      transform: translateY(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .jumbotron-content {
+      animation: backInDown 1s;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .jumbotron-img {
+      opacity: 0;
+      animation: fadeInRight 1s 1s forwards;
+  }
+
 
 
 // ====== NAVIGATION ======
@@ -292,6 +337,11 @@ body {
         height: 320px;
         width: 250px;
     }
+
+    .review-card {
+        max-width: 320px;
+        max-height: 250px;
+    }
    
  }
  
@@ -323,9 +373,18 @@ body {
     }
 
     // REVIEW
+    .review-card {
+        width: 240px;
+        max-height: 250px;
+    }
+
     .review-card-body {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .review1 {
+        margin-bottom: 30px;
     }
 
      // DOWNLOAD
@@ -355,6 +414,12 @@ body {
      }
  
      // FEATURES
+     .feature-row {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
      .feature-card {
         max-height: 260px;
         max-width: 190px;
@@ -368,25 +433,23 @@ body {
     .feature-text {
         font-size: 12px;
     }
-    // REVIEW
+    REVIEW
+    .review-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    // .reviews {
-    //     padding: 0 80px;
-    // }
+    .review1,.review2,.review3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    // .review-card-body {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
-    // .review-flip {
-    //     flex-direction: row-reverse;
-    // }
-
-    // .review-mobile {
-    //     display: none;
-    // }
+    .review2 {
+        margin-bottom: 30px;
+    }
 
     // DOWNLOAD
     .download-bg {
@@ -460,29 +523,8 @@ body {
          margin-bottom: 30px;
      }
 
-    //  img.review-icon {
-    //     height: 100px;
-    //     width: 100px;
-    //  }
 
-     .review-card {
-         display: block;
-         padding: 0 90px;
-     }
 
-    //  .review-icon-1 {
-    //      margin-right: 3px;
-    //  }
-
-    //  .review-icon-2 {
-    //      margin-left: 3px;
-    //  }
-
-    //  .padding {
-    //      padding: 0;
-    //  }
-
-     
 
      // DOWNLOAD
     .download-block {
@@ -518,8 +560,10 @@ body {
     }
 
     .contact-btn {
-        width: 100px;
-        height: 45px;
+        width: 80px;
+        height: 40px;
+        padding: 0;
+        font-size: 16px;
     }
 
     .contact-mobile {
@@ -545,8 +589,8 @@ body {
     }
     
     .newsletter-btn {
-        width: 120px;
-       
+        width: 105px;
+        padding: 0;
     
     }
 
