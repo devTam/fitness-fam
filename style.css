@@ -384,6 +384,10 @@ body {
   .reviews {
     margin-bottom: 30px;
   }
+  .review-card {
+    display: block;
+    padding: 0 90px;
+  }
   .download-bg {
     padding: 40px 60px;
   }
