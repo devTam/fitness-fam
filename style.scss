@@ -87,7 +87,7 @@ body {
 
 .feature-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -411,6 +411,32 @@ body {
      .jumbotron-btn {
          font-size: 16px !important;
      }
+
+     .jumbotron-content {
+         align-items: center !important;
+         order: 2;
+     }
+
+     .jumbotron-text {
+         text-align: center;
+     }
+
+     .jumbotron-img {
+         order: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 40px;
+        //  width: 135px;
+        //  height: 230px;
+     }
+
+     .header-img {
+         width: 125px;
+         height: 231px;
+     }
+
+     
 
      // FEATURE
      .feature-row {
