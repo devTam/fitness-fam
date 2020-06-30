@@ -590,15 +590,23 @@ body {
         margin-top: 60px;
     }
 
-    .newsletter-block {
-        width: 100%;
-        padding: 0;
-    }
+    // .newsletter-block {
+    //     // width: 100%;
+    //     // padding: 0;
+    // }
 
     .newsletter-content {
-        width: 100%;
+        // width: 100%;
         // padding: 0 15px;
-        justify-content: space-around;
+        // justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter-btn {
+        margin-top: 20px;
+        padding: 10px 0;
     }
 
     .subscribe-text, .feature-heading,
