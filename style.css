@@ -589,7 +589,8 @@ body {
   }
   .newsletter-content {
     width: 100%;
-    padding: 0 15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .subscribe-text, .feature-heading,
   .download-heading, .review-heading, .contact-heading {
