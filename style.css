@@ -458,6 +458,13 @@ body {
   .download-bg {
     padding: 40px 80px;
   }
+  .download-block {
+    width: 100%;
+    padding: 0;
+  }
+  .download-content {
+    width: 100%;
+  }
   .download-btns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -575,6 +582,14 @@ body {
   }
   .newsletter {
     margin-top: 60px;
+  }
+  .newsletter-block {
+    width: 100%;
+    padding: 0;
+  }
+  .newsletter-content {
+    width: 100%;
+    padding: 0 15px;
   }
   .subscribe-text, .feature-heading,
   .download-heading, .review-heading, .contact-heading {

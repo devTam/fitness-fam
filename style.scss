@@ -461,6 +461,15 @@ body {
         padding: 40px 80px;
     }
 
+    .download-block {
+        width: 100%;
+        padding: 0;
+    }
+
+    .download-content {
+        width: 100%;
+    }
+
     .download-btns {
         display: flex;
     justify-content: space-between;
@@ -578,8 +587,17 @@ body {
     // NEWSLETTER
 
     .newsletter {
-        // font-size: 14px;
         margin-top: 60px;
+    }
+
+    .newsletter-block {
+        width: 100%;
+        padding: 0;
+    }
+
+    .newsletter-content {
+        width: 100%;
+        padding: 0 15px;
     }
 
     .subscribe-text, .feature-heading,
