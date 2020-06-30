@@ -12,10 +12,9 @@ html {
 }
 
 body {
-    // font-family: 'Catamaran', sans-serif;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    // color: #F63541;
+    
 }
 
 // ANIMATIONS
@@ -117,7 +116,7 @@ body {
 }
 
 .jumbotron-btn {
-    font-size: 22px;
+    font-size: 20px;
     background-color: #F63541 !important;
     font-weight: 500;
     transition: all .5s;
@@ -191,9 +190,6 @@ body {
     padding-right: 0;
 }
 
-.review-text {
-    font-size: 14px;
-}
 
 // ======== DOWNLOAD SECTION==========
 
@@ -204,10 +200,7 @@ body {
     color: #333!important;
 }
 
-.download-text {
-    font-size: 14px;
-    font-weight: 500;
-}
+
 
 .download-btn {
     height: 65px;
@@ -233,6 +226,7 @@ body {
     color: #fff !important;
     background: #F63541;
     width: 120px;
+    font-size: 1rem !important;
     font-weight: 500;
     border: 1px solid #F63541;
     transition: all .25s ease-in-out;
@@ -348,14 +342,6 @@ body {
  // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px) { ... }
  @media only screen and (max-width: 992px) {
-     // JUMBOTRON
-     .jumbotron-header {
-         font-size: 45px;
-     }
- 
-     .jumbotron-btn {
-         font-size: 20px !important;
-     }
 
      //FEATURE
      .feature-card {
@@ -368,11 +354,17 @@ body {
         height: 70px;
     }
 
-    .feature-text {
-        font-size: 14px;
-    }
+    // .feature-text {
+    //     font-size: 14px;
+    // }
 
     // REVIEW
+    .review-row {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+    }
+
     .review-card {
         width: 240px;
         max-height: 250px;
@@ -387,10 +379,29 @@ body {
         margin-bottom: 30px;
     }
 
+    .review1,.review2,.review3 {
+        display: flex;
+
+    }
+    .review3 {
+        min-width: 330px;
+    }
+
+    .review-text {
+        padding: 0 5px;
+    }
      // DOWNLOAD
 
      .download-bg {
         padding: 70px 120px;
+    }
+
+    // CONTACT
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
  }
  
@@ -412,6 +423,10 @@ body {
      .jumbotron-text {
          font-size: 16px;
      }
+
+     .jumbotron-btn {
+         font-size: 16px;
+     }
  
      // FEATURES
      .feature-row {
@@ -420,19 +435,7 @@ body {
          align-items: center;
      }
 
-     .feature-card {
-        max-height: 260px;
-        max-width: 190px;
-    }
-
-    .feature-icon {
-        max-width: 50px;
-        max-height: 50px;
-    }
-
-    .feature-text {
-        font-size: 12px;
-    }
+   
     REVIEW
     .review-row {
         display: flex;
@@ -451,9 +454,16 @@ body {
         margin-bottom: 30px;
     }
 
+    
+
     // DOWNLOAD
     .download-bg {
         padding: 40px 80px;
+    }
+
+    .download-btns {
+        display: flex;
+    justify-content: space-between;
     }
 
     .download-btn {
@@ -461,6 +471,13 @@ body {
     width: 160px;
     border-radius: 6px;
     margin: 8px;
+    
+    }
+
+    .download-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     // FOOTER
@@ -475,10 +492,11 @@ body {
  
 // Extra small devices (portrait phones, less than 576px)
  @media only screen and (max-width: 576px) {
-     // JUMBOTRON
-     .jumbotron-btn {
-         font-size: 16px !important;
-     }
+    
+
+    .jumbotron-header {
+        font-size: 30px;
+    }
 
      .jumbotron-content {
          align-items: center !important;
@@ -495,8 +513,7 @@ body {
          justify-content: center;
          align-items: center;
          margin-bottom: 40px;
-        //  width: 135px;
-        //  height: 230px;
+        
      }
 
      .header-img {
@@ -524,8 +541,6 @@ body {
      }
 
 
-
-
      // DOWNLOAD
     .download-block {
         order: 2;
@@ -548,23 +563,13 @@ body {
     width: 140px;
     }
 
-    .download-text {
-        font-size: 10px;
-    }
 
     // CONTACT
     .contact {
         padding: 0 20px;
-        font-size: 14px;
         margin: 30px 0;
     }
 
-    .contact-btn {
-        width: 80px;
-        height: 40px;
-        padding: 0;
-        font-size: 16px;
-    }
 
     .contact-mobile {
         display: none;
@@ -573,31 +578,22 @@ body {
     // NEWSLETTER
 
     .newsletter {
-        font-size: 14px;
+        // font-size: 14px;
         margin-top: 60px;
     }
 
-    .subscribe-text {
+    .subscribe-text, .feature-heading,
+    .download-heading, .review-heading, .contact-heading {
         font-size: 20px;
     }
 
-    .newsletter-input {
-        width: 180px;
-        height: 45px;
-        margin-right: 15px;
-        padding: 1px 2px;
-    }
-    
-    .newsletter-btn {
-        width: 105px;
-        padding: 0;
-    
-    }
 
     // FOOTER
-    .footer {
-        font-size: 14px;
-    }
+   
+ }
 
-
+ @media only screen and (min-width: 1200px) {
+     .review-card {
+         max-height: 254px;
+     }
  }
