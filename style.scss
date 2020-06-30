@@ -137,6 +137,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .feature-card {
@@ -220,6 +221,7 @@ body {
 
 .contact {
     margin: 60px 0;
+    overflow: hidden;
 }
 
 .contact-btn {
@@ -245,6 +247,7 @@ body {
 
 .newsletter {
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 .newsletter-input {
