@@ -548,6 +548,7 @@ body {
   }
   .reviews {
     margin-bottom: 30px;
+    padding: 0 !important;
   }
   .download-block {
     -webkit-box-ordinal-group: 3;
